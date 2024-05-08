@@ -1,0 +1,70 @@
+                          CONFORMAL (R)
+                   Version 20.20-s200 (01-Feb-2021) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2020. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1191 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read library ../lib/slow_vdd1v0_basiccells.v -verilog -both
+// Parsing file ../lib/slow_vdd1v0_basiccells.v ...
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:56)
+// Warning: (VLG5.5) Internal primitive is recognized (occurrence:120)
+// Warning: (VLG5.6) Named port association is ignored for primitive gate (occurrence:120)
+// Warning: (IGN7.1) trireg net is modeled as a latch to hold value (occurrence:1)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:1)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:80)
+// Warning: (HRC3.10b) An input port is declared, but it is not used. Module is empty (occurrence:1)
+// Note: Read VERILOG library successfully
+// Command: read design ../rtl/adder.v -verilog -golden
+// Parsing file ../rtl/adder.v ...
+// Golden root module is set to 'adder'
+// Note: Read VERILOG design successfully
+// Command: read design ../synthesis/outputs/adder_netlist_dft.v -verilog -revised
+// Parsing file ../synthesis/outputs/adder_netlist_dft.v ...
+// Revised root module is set to 'adder'
+// Warning: (RTL2.13) Undriven pin is detected (occurrence:1)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:2)
+// Warning: There are 1 undriven nets in Revised
+// Warning: There are 1 undriven pins in Revised
+// Note: Read VERILOG design successfully
+// Command: add pin constraints 0 SE  -revised
+// Command: add ignored inputs scan_in -revised
+// Command: add ignored outputs scan_out -revised
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Warning: Golden and Revised have different numbers of key points:
+// Golden  key points = 5
+// Revised key points = 6
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO        Total   
+--------------------------------------------------------------------------------
+Golden            3      2         5       
+--------------------------------------------------------------------------------
+Revised           3      2         5       
+================================================================================
+Unmapped points:
+================================================================================
+Revised:
+--------------------------------------------------------------------------------
+Unmapped points   PI        Total   
+--------------------------------------------------------------------------------
+Extra             1         1       
+================================================================================
+// Command: add compared point -all
+// 2 compared points added to compare list
+// Command: compare 
+================================================================================
+Compared points      PO        Total   
+--------------------------------------------------------------------------------
+Equivalent           2         2       
+================================================================================

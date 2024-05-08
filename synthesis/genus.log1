@@ -1,0 +1,70 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 20.11-s111_1, built Mon Apr 26 02:27:38 PDT 2021
+Options: -files genus_dft_script.tcl 
+Date:    Wed May 08 17:11:44 2024
+Host:    centos.localdomain (x86_64 w/Linux 4.18.0-408.el8.x86_64) (6cores*6cpus*1physical cpu*Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz 9216KB) (16075932KB)
+PID:     671011
+OS:      CentOS Stream release 8
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (7 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source genus_dft_script.tcl
+#@ Begin verbose source ./genus_dft_script.tcl
+@file(genus_dft_script.tcl) 1: set_db init_lib_search_path ../lib/
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib/
+@file(genus_dft_script.tcl) 2: set_db init_hdl_search_path ../rtl/
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl/
+@file(genus_dft_script.tcl) 3: read_libs slow_vdd1v0_basicCells.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  *******************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+@file(genus_dft_script.tcl) 4: read_hdl dff.v
+module RisingEdge_DFlipFlop_SyncReset(D,clk,sync_reset,Q);
+                                                      |
+Error   : Port has no type. [VLOGPT-201] [read_hdl]
+        : Port 'sync_reset' in file '../rtl/dff.v' on line 1, column 55.
+        : A port needs to be declared as input, output, or inout.
+input rst; // synchronous reset 
+         |
+Error   : I/O signal not declared in portlist. [VLOGPT-23] [read_hdl]
+        : Signal 'rst' in file '../rtl/dff.v' on line 4, column 10.
+        : An declared input, output, or inout signal must also be declared in the port list.
+#@ End verbose source ./genus_dft_script.tcl
+1
+Encountered problems processing file: genus_dft_script.tcl
+WARNING: This version of the tool is 1108 days old.
+@genus:root: 2> gui_show
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 55s, ST: 8s, FG: 8s, CPU: 3.8%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.4G, phys peak: 0.4G}, SYS {load: 0.4, cpu: 6, total: 15.3G, free: 5.0G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 56s, ST: 8s, FG: 8s, CPU: 3.8%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.4G, phys peak: 0.4G}, SYS {load: 0.4, cpu: 6, total: 15.3G, free: 5.0G}
+Abnormal exit.

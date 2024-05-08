@@ -1,0 +1,65 @@
+[05/08 17:23:47      0s] 
+[05/08 17:23:47      0s] Cadence Innovus(TM) Implementation System.
+[05/08 17:23:47      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/08 17:23:47      0s] 
+[05/08 17:23:47      0s] Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+[05/08 17:23:47      0s] Options:	-stylus -file runPnR.tcl 
+[05/08 17:23:47      0s] Date:		Wed May  8 17:23:47 2024
+[05/08 17:23:47      0s] Host:		centos.localdomain (x86_64 w/Linux 4.18.0-408.el8.x86_64) (6cores*6cpus*Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz 9216KB)
+[05/08 17:23:47      0s] OS:		CentOS Stream release 8
+[05/08 17:23:47      0s] 
+[05/08 17:23:47      0s] License:
+[05/08 17:23:47      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/08 17:23:47      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/08 17:23:52      5s] 
+[05/08 17:23:52      5s] 
+[05/08 17:23:58     10s] @(#)CDS: Innovus v20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:23:58     10s] @(#)CDS: NanoRoute 20.14-s095_1 NR210411-1939/20_14-UB (database version 18.20.547) {superthreading v2.13}
+[05/08 17:23:58     10s] @(#)CDS: AAE 20.14-s018 (64bit) 04/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:23:58     10s] @(#)CDS: CTE 20.14-s027_1 () Apr 13 2021 21:29:07 ( )
+[05/08 17:23:58     10s] @(#)CDS: SYNTECH 20.14-s017_1 () Mar 25 2021 13:07:27 ( )
+[05/08 17:23:58     10s] @(#)CDS: CPE v20.14-s080
+[05/08 17:23:58     10s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:23:58     10s] @(#)CDS: OA 22.60-p052 Thu Feb 25 10:35:13 2021
+[05/08 17:23:58     10s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/08 17:23:58     10s] @(#)CDS: RCDB 11.15.0
+[05/08 17:23:58     10s] @(#)CDS: STYLUS 20.10-p026_1 (03/12/2021 08:04 PST)
+[05/08 17:23:58     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_673656_centos.localdomain_VLSI_fZQoii.
+
+[05/08 17:23:58     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_673656_centos.localdomain_VLSI_fZQoii.
+[05/08 17:23:58     10s] 
+[05/08 17:23:58     10s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[05/08 17:23:59     10s] [INFO] Loading PVS 20.11 fill procedures
+[05/08 17:24:00     11s] 
+[05/08 17:24:00     11s] **INFO:  MMMC transition support version v31-84 
+[05/08 17:24:00     11s] 
+[05/08 17:24:02     14s] #@ Processing -files option
+[05/08 17:24:02     14s] @innovus 1> source runPnR.tcl
+[05/08 17:24:02     14s] #@ Begin verbose source (pre): source runPnR.tcl
+[05/08 17:24:02     14s] @file 1: #######################################################
+[05/08 17:24:02     14s] @file 2: #                                                     
+[05/08 17:24:02     14s] @file 3: #  Innovus Command Logging File                     
+[05/08 17:24:02     14s] @file 4: #  Created on Thu Oct 22 09:51:30 2020                
+[05/08 17:24:02     14s] @file 5: #                                                     
+[05/08 17:24:02     14s] @file 6: #######################################################
+[05/08 17:24:02     14s] @file 7:
+[05/08 17:24:02     14s] @file 8: #@(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:24:02     14s] @file 9: #@(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[05/08 17:24:02     14s] @file 10: #@(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:24:02     14s] @file 11: #@(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[05/08 17:24:02     14s] @file 12: #@(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[05/08 17:24:02     14s] @file 13: #@(#)CDS: CPE v20.10-p006
+[05/08 17:24:02     14s] @file 14: #@(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:24:02     14s] @file 15:
+[05/08 17:24:02     14s] @file 16: set_db init_netlist_files ../physical_design/dff_netlist_dft.v
+[05/08 17:24:02     14s] @file 17: set_db init_lef_files {../lef/gsclib045_tech.lef ../lef/gsclib045_macro.lef}
+[05/08 17:24:02     14s] @file 18: set_db init_power_nets VDD
+[05/08 17:24:02     14s] @file 19: set_db init_ground_nets VSS
+[05/08 17:24:02     14s] @file 20: set_db init_mmmc_files  dff.view
+[05/08 17:24:02     14s] @file 21: read_mmmc dff.view
+[05/08 17:24:02     14s] **ERROR: (TCLCMD-1146):	Mmmc file 'dff.view' not found.
+[05/08 17:24:02     14s] **ERROR: (IMPSE-110):	File 'runPnR.tcl' line 21: 1.
+[05/08 17:24:02     14s] #@ End verbose source runPnR.tcl
+[05/08 17:24:02     14s] **ERROR: (IMPSYT-6692):	Invalid return code while executing 'runPnR.tcl' was returned and script processing was stopped. Review the following error in 'runPnR.tcl' then restart.
+[05/08 17:24:02     14s] **ERROR: (IMPSYT-6693):	Error message: runPnR.tcl: 1.
+[05/08 17:24:02     14s] @innovus 2> 

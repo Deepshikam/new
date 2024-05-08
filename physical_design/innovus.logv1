@@ -1,0 +1,159 @@
+[05/08 17:30:35      0s] 
+[05/08 17:30:35      0s] Cadence Innovus(TM) Implementation System.
+[05/08 17:30:35      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/08 17:30:35      0s] 
+[05/08 17:30:35      0s] Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+[05/08 17:30:35      0s] Options:	-stylus -file runPnR.tcl 
+[05/08 17:30:35      0s] Date:		Wed May  8 17:30:35 2024
+[05/08 17:30:35      0s] Host:		centos.localdomain (x86_64 w/Linux 4.18.0-408.el8.x86_64) (6cores*6cpus*Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz 9216KB)
+[05/08 17:30:35      0s] OS:		CentOS Stream release 8
+[05/08 17:30:35      0s] 
+[05/08 17:30:35      0s] License:
+[05/08 17:30:35      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/08 17:30:35      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/08 17:30:40      5s] 
+[05/08 17:30:40      5s] 
+[05/08 17:30:45     10s] @(#)CDS: Innovus v20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:30:45     10s] @(#)CDS: NanoRoute 20.14-s095_1 NR210411-1939/20_14-UB (database version 18.20.547) {superthreading v2.13}
+[05/08 17:30:45     10s] @(#)CDS: AAE 20.14-s018 (64bit) 04/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:30:45     10s] @(#)CDS: CTE 20.14-s027_1 () Apr 13 2021 21:29:07 ( )
+[05/08 17:30:45     10s] @(#)CDS: SYNTECH 20.14-s017_1 () Mar 25 2021 13:07:27 ( )
+[05/08 17:30:45     10s] @(#)CDS: CPE v20.14-s080
+[05/08 17:30:45     10s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:30:45     10s] @(#)CDS: OA 22.60-p052 Thu Feb 25 10:35:13 2021
+[05/08 17:30:45     10s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/08 17:30:45     10s] @(#)CDS: RCDB 11.15.0
+[05/08 17:30:45     10s] @(#)CDS: STYLUS 20.10-p026_1 (03/12/2021 08:04 PST)
+[05/08 17:30:45     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_674761_centos.localdomain_VLSI_yYORZl.
+
+[05/08 17:30:45     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_674761_centos.localdomain_VLSI_yYORZl.
+[05/08 17:30:45     10s] 
+[05/08 17:30:45     10s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[05/08 17:30:46     10s] [INFO] Loading PVS 20.11 fill procedures
+[05/08 17:30:47     11s] 
+[05/08 17:30:47     11s] **INFO:  MMMC transition support version v31-84 
+[05/08 17:30:47     11s] 
+[05/08 17:30:49     13s] #@ Processing -files option
+[05/08 17:30:49     13s] @innovus 1> source runPnR.tcl
+[05/08 17:30:49     13s] #@ Begin verbose source (pre): source runPnR.tcl
+[05/08 17:30:49     13s] @file 1: #######################################################
+[05/08 17:30:49     13s] @file 2: #                                                     
+[05/08 17:30:49     13s] @file 3: #  Innovus Command Logging File                     
+[05/08 17:30:49     13s] @file 4: #  Created on Thu Oct 22 09:51:30 2020                
+[05/08 17:30:49     13s] @file 5: #                                                     
+[05/08 17:30:49     13s] @file 6: #######################################################
+[05/08 17:30:49     13s] @file 7:
+[05/08 17:30:49     13s] @file 8: #@(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:30:49     13s] @file 9: #@(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[05/08 17:30:49     13s] @file 10: #@(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:30:49     13s] @file 11: #@(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[05/08 17:30:49     13s] @file 12: #@(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[05/08 17:30:49     13s] @file 13: #@(#)CDS: CPE v20.10-p006
+[05/08 17:30:49     13s] @file 14: #@(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/08 17:30:49     13s] @file 15:
+[05/08 17:30:49     13s] @file 16: set_db init_netlist_files ../physical_design/dff_netlist_dft.v
+[05/08 17:30:49     13s] @file 17: set_db init_lef_files {../lef/gsclib045_tech.lef ../lef/gsclib045_macro.lef}
+[05/08 17:30:49     13s] @file 18: set_db init_power_nets VDD
+[05/08 17:30:49     13s] @file 19: set_db init_ground_nets VSS
+[05/08 17:30:49     13s] @file 20: set_db init_mmmc_files  dff.view
+[05/08 17:30:49     13s] @file 21: read_mmmc dff.view
+[05/08 17:30:49     13s] #@ Begin verbose source dff.view (pre)
+[05/08 17:30:49     13s] @file 1:
+[05/08 17:30:49     13s] @file 2: create_library_set -name max_timing\
+[05/08 17:30:49     13s]    -timing ../lib/slow_vdd1v0_basicCells.lib
+[05/08 17:30:49     13s] @file 4:
+[05/08 17:30:49     13s] @file 5: create_library_set -name min_timing\
+[05/08 17:30:49     13s]    -timing ../lib/fast_vdd1v0_basicCells.lib
+[05/08 17:30:49     13s] @file 7:
+[05/08 17:30:49     13s] @file 8: create_timing_condition -name default_mapping_tc_2\
+[05/08 17:30:49     13s]    -library_sets min_timing
+[05/08 17:30:49     13s] @file 10: create_timing_condition -name default_mapping_tc_1\
+[05/08 17:30:49     13s]    -library_sets max_timing
+[05/08 17:30:49     13s] @file 12:
+[05/08 17:30:49     13s] @file 13: create_rc_corner -name rccorners\
+[05/08 17:30:49     13s]    -cap_table ../captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl\
+[05/08 17:30:49     13s]    -pre_route_res 1\
+[05/08 17:30:49     13s]    -post_route_res 1\
+[05/08 17:30:49     13s]    -pre_route_cap 1\
+[05/08 17:30:49     13s]    -post_route_cap 1\
+[05/08 17:30:49     13s]    -post_route_cross_cap 1\
+[05/08 17:30:49     13s]    -pre_route_clock_res 0\
+[05/08 17:30:49     13s]    -pre_route_clock_cap 0\
+[05/08 17:30:49     13s]    -qrc_tech ../QRC_Tech/gpdk045.tch
+[05/08 17:30:49     13s] **ERROR: (TCLCMD-995):	Can not open file '../captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl' for RC corner
+[05/08 17:30:49     13s] **ERROR: (IMPSE-110):	File 'dff.view' line 13: errors out.
+[05/08 17:30:49     13s] #@ End verbose source dff.view
+[05/08 17:30:49     13s] 
+[05/08 17:30:49     13s]     while executing
+[05/08 17:30:49     13s] "create_rc_corner -name rccorners\
+[05/08 17:30:49     13s]    -cap_table ../captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl\
+[05/08 17:30:49     13s]    -pre_route_res 1\
+[05/08 17:30:49     13s]    -post_route_res 1\
+[05/08 17:30:49     13s]  ..."
+[05/08 17:30:49     13s]     (file "dff.view" line 13)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "::se_source_orig dff.view"
+[05/08 17:30:49     13s]     ("uplevel" body line 1)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "uplevel [concat ::se_source_orig $args]"
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "if {[::SE::source_verbose_file_state $file_name] == 1} {
+[05/08 17:30:49     13s]               ::SE::source_verbose_start $file_name
+[05/08 17:30:49     13s]               set st [uplevel [concat ::s..."
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "if {$useTclVerbose} {
+[05/08 17:30:49     13s]           # use tcl internal method
+[05/08 17:30:49     13s]           set st ""
+[05/08 17:30:49     13s]           if {[::SE::source_verbose_file_state $file_name] == 1} {
+[05/08 17:30:49     13s]      ..."
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "if {$largeFile == 1} {
+[05/08 17:30:49     13s]     if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+[05/08 17:30:49     13s]       $putCmd "Sourcing $file_name"
+[05/08 17:30:49     13s]     }
+[05/08 17:30:49     13s]     set st [uplevel [concat..."
+[05/08 17:30:49     13s]     (procedure "source" line 148)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "source dff.view"
+[05/08 17:30:49     13s]     ("uplevel" body line 1)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "uplevel #0 {source dff.view}"
+[05/08 17:30:49     13s] **ERROR: (IMPSE-110):	File 'runPnR.tcl' line 21: errors out.
+[05/08 17:30:49     13s] #@ End verbose source runPnR.tcl
+[05/08 17:30:49     13s] **ERROR: (IMPSYT-6692):	Invalid return code while executing 'runPnR.tcl' was returned and script processing was stopped. Review the following error in 'runPnR.tcl' then restart.
+[05/08 17:30:49     13s] Error info: runPnR.tcl: 
+[05/08 17:30:49     13s]     while executing
+[05/08 17:30:49     13s] "read_mmmc dff.view"
+[05/08 17:30:49     13s]     (file "runPnR.tcl" line 21)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "::se_source_orig runPnR.tcl"
+[05/08 17:30:49     13s]     ("uplevel" body line 1)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "uplevel [concat ::se_source_orig $args]"
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "if {[::SE::source_verbose_file_state $file_name] == 1} {
+[05/08 17:30:49     13s]               ::SE::source_verbose_start $file_name
+[05/08 17:30:49     13s]               set st [uplevel [concat ::s..."
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "if {$useTclVerbose} {
+[05/08 17:30:49     13s]           # use tcl internal method
+[05/08 17:30:49     13s]           set st ""
+[05/08 17:30:49     13s]           if {[::SE::source_verbose_file_state $file_name] == 1} {
+[05/08 17:30:49     13s]      ..."
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "if {$largeFile == 1} {
+[05/08 17:30:49     13s]     if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+[05/08 17:30:49     13s]       $putCmd "Sourcing $file_name"
+[05/08 17:30:49     13s]     }
+[05/08 17:30:49     13s]     set st [uplevel [concat..."
+[05/08 17:30:49     13s]     (procedure "source" line 148)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "source runPnR.tcl"
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "::se::run_command_from_console "source runPnR.tcl""
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "eval_novus {::se::run_command_from_console "source runPnR.tcl"}"
+[05/08 17:30:49     13s]     (in namespace inscope "::" script line 1)
+[05/08 17:30:49     13s]     invoked from within
+[05/08 17:30:49     13s] "namespace inscope :: eval_novus "::se::run_command_from_console \"source $fileName\""".
+[05/08 17:30:49     14s] @innovus 2> **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...

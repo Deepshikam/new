@@ -1,0 +1,52 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+Options:	-stylus -file runPnR.tcl 
+Date:		Wed May  8 17:23:47 2024
+Host:		centos.localdomain (x86_64 w/Linux 4.18.0-408.el8.x86_64) (6cores*6cpus*Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz 9216KB)
+OS:		CentOS Stream release 8
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_673656_centos.localdomain_VLSI_fZQoii.
+
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading PVS 20.11 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+#@ Processing -files option
+@innovus 1> source runPnR.tcl
+#@ Begin verbose source (pre): source runPnR.tcl
+@file 1: #######################################################
+@file 2: #                                                     
+@file 3: #  Innovus Command Logging File                     
+@file 4: #  Created on Thu Oct 22 09:51:30 2020                
+@file 5: #                                                     
+@file 6: #######################################################
+@file 7:
+@file 8: #@(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+@file 9: #@(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+@file 10: #@(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+@file 11: #@(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+@file 12: #@(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+@file 13: #@(#)CDS: CPE v20.10-p006
+@file 14: #@(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+@file 15:
+@file 16: set_db init_netlist_files ../physical_design/dff_netlist_dft.v
+@file 17: set_db init_lef_files {../lef/gsclib045_tech.lef ../lef/gsclib045_macro.lef}
+@file 18: set_db init_power_nets VDD
+@file 19: set_db init_ground_nets VSS
+@file 20: set_db init_mmmc_files  dff.view
+@file 21: read_mmmc dff.view
+**ERROR: (TCLCMD-1146):	Mmmc file 'dff.view' not found.
+**ERROR: (IMPSE-110):	File 'runPnR.tcl' line 21: 1.
+#@ End verbose source runPnR.tcl
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'runPnR.tcl' was returned and script processing was stopped. Review the following error in 'runPnR.tcl' then restart.
+**ERROR: (IMPSYT-6693):	Error message: runPnR.tcl: 1.
+@innovus 2> 

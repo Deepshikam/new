@@ -1,0 +1,35 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./test_scripts/Inca_libs_17_12_52/run.lnx8664.20.09.d
+-RUNMODE
+-amsdlibdir
+./test_scripts/Inca_libs_17_12_52/AMSD
+-STATUS
+-LIBEXT
+.v
+-LIBEXT
+.V
+-LIBEXT
+.z
+-LIBEXT
+.Z
+-LIBEXT
+.gz
+-XMLIBDIRNAME
+./test_scripts/Inca_libs_17_12_52
+-VFILE
+../lib/slow_vdd1v0_basiccells.v
+./test_scripts/dff.test_netlist.v
+./test_scripts/testresults/verilog/VER.FULLSCAN.dff_atpg.mainsim.v
+-CDSLIB
+./test_scripts/Inca_libs_17_12_52/run.lnx8664.20.09.d/cdsrun.lib
+-HDLVAR
+./test_scripts/Inca_libs_17_12_52/run.lnx8664.20.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./test_scripts/Inca_libs_17_12_52/run.lnx8664.20.09.d/xllibs
+-ALLOWUNBOUND

@@ -1,0 +1,46 @@
+#first synthesis command(open terminal in synthesis folder)
+
+
+genus -f <script_file_name>
+gui_show
+
+#second equivalence checking(open terminal in equivalence checking)
+lec -XL -nogui -color -64 -dofile <filename>
+
+#test stage (synthesis folder)
+modus -file ./test_scripts/runmodusatpg.tcl
+
+./test_scripts/run_fullscan_sim
+
+
+#implementation stage (physical design folder)
+
+1)first copy runpnr.tcl file from sta to physical design
+2)then open runpnr tcl and add all files mentioned in the script from synthesis outputs to pd folder
+3)then add command write_io_file -template pins.io in runpnr.tcl script
+
+then run the command: innovus -stylus -file runpnr.tcl
+
+#then generate reports for timing ,power and area
+
+for area and power:
+report_area(in terminal)
+report_power(in terminal)
+
+for timing:
+set_db timing_analysis_type ocv
+time_design –post_route (setup)
+time_design –post_route -hold(hold)
+
+report_timing -early
+report_timing -late
+
+
+command to copy:
+scp VLSI@172.16.50.108:/home/VLSI/lab_3/
+
+
+
+
+
+
